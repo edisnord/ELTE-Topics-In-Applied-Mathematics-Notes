@@ -1,0 +1,5 @@
+* Inner product spaces
+
+$$
+  \text{Test Latex}
+$$
