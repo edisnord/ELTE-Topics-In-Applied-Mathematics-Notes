@@ -58,7 +58,7 @@ that satisfies the following three properties for all vectors $x,y,z \in V$ and 
 *** Example: Euclidian space
 
 $$
-{\displaystyle \left\langle {\begin{bmatrix}x_{1}\\\vdots \\x_{n}\end{bmatrix}},{\begin{bmatrix}y_{1}\\\vdots \\y_{n}\end{bmatrix}}\right\rangle =x^{\textsf {T}}y=\sum _{i=1}^{n}x_{i}y_{i}=x_{1}y_{1}+\cdots +x_{n}y_{n},}
+{\displaystyle \left\langle {\begin{bmatrix}x_{1}\\\vdots \\x_{n}\end{bmatrix}},{\begin{bmatrix}y_{1}\\\vdots \\y_{n}\end{bmatrix}}\right\rangle = x^{\textsf {T}}y = \sum _{i=1}^{n}x_{i}y_{i}=x_{1}y_{1}+\cdots +x_{n}y_{n}}
 $$
 
 *** Example: Hilbert space

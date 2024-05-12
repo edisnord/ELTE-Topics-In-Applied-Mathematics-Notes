@@ -1,1 +1,18 @@
 * Cauchy Sequences and Complete Normed Spaces
+
+** Recall: Proving the convergence of a sequence
+
+The sequence $(x_n)$ converges to a real number $x$ if for an arbitrary $\epsilon > 0$, there exists a $N \in \mathbb{N}$ so that for all $n > N$, $|x_n - x| < \epsilon$
+
+The formal definition of a convergent sequence:
+
+\begin{gather*}
+\forall \varepsilon > 0, \exists N \in \mathbb{N} : |x_n - x| < \varepsilon, \ \forall n > N.
+\end{gather*}
+
+*** Topoligical version (using $\epsilon$-neighborhoods):
+
+The sequence $(x_n)$ converges to $x$, if given any $\epsilon$-neighborhood $V_\epsilon(x)$ of a, there exists a point in the sequence
+after which all of the terms are in $V_\epsilon(a)$. In other words, every $\epsilon$-neighborhood contains all but a finite number
+of the terms of $(x_n)$
+
