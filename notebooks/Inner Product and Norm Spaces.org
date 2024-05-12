@@ -1,6 +1,31 @@
-* Inner product spaces
+* Inner Product, Norms and Norm Spaces
+
+** Norm
+
+A norm is a function from a real or complex vector space to the non-negative real
+numbers that behaves in certain ways like the distance from the origin. A norm
+in an Euclidian sppace is the magnitude of the vector.
+
+*** Definition
+
+Given a vector space $\displaystyle{X}$ over a subfield ${\displaystyle F}$ of the complex numbers $\mathbb{C}$,
+a norm on $\displaystyle{X}$ is a real-valued function ${\displaystyle p:X\to \mathbb{R}}$, with
+the following properties, where $\displaystyle{|s|}$ denotes the usual absolute
+value of a scalar $\displaystyle{s}$:
+1. Triangle inequality $p(x + y) \leq p(x) + p(y), \forall x,y \in X$
+2. Absolute homogeneity: $p(sx) = |s|p(x), \forall x \in X$ and for all scalars $s$
+3. Positive definiteness: $\forall x \in X, p(x) = 0 \implies x = 0$
+4. Non-negativity: $p(x) \geq 0, \forall x \in X$
+
+*** Equivalent norms
 
 
-$$
-  \text{Test Latex}
-$$
+
+** Inner product space
+
+An inner product space is a real or complex vector space whith an operation called
+an inner product. The inner product of two vectors in the space is a scalar,
+often denoted with angle brackets: $\langle a, b \rangle$. Inner products allow formal definitions
+of intuitive geometric notations such as lengths, angles and orthogonality.
+
+The inner product naturally induces an associated norm
