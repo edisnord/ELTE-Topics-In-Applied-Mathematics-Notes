@@ -19,7 +19,13 @@ value of a scalar $\displaystyle{s}$:
 
 *** Equivalent norms
 
+Suppose that $p$ and $q$ are two norms on a vector space $X$. Then $p$ and $q$ are called equivalent
+if there exist two positive real constants $c$ and $C$ with $c > 0$ such that for every vector
+$x \in X$,
 
+$$
+cq(x) \leq p(x) \leq Cq(x)
+$$
 
 ** Inner product space
 
@@ -28,4 +34,37 @@ an inner product. The inner product of two vectors in the space is a scalar,
 often denoted with angle brackets: $\langle a, b \rangle$. Inner products allow formal definitions
 of intuitive geometric notations such as lengths, angles and orthogonality.
 
-The inner product naturally induces an associated norm
+The inner product naturally induces an associated norm, so every inner product space is
+also a normed vector space. If the normed space is also complete, then the inner product
+space is also a Hilbert Space. Refer to [[./Cauchy Sequences and Complete Normed Spaces.org][this file]] for more details on complete spaces.
+
+*** Definition
+
+An inner product space is a vector space $V$ over a field $F$, which is either $\mathbb{R}$ or $\mathbb{C}$ together
+with an inner product, that is, a map:
+
+$$
+\langle\cdot,\cdot\rangle : V \times V \to F
+$$
+
+that satisfies the following three properties for all vectors $x,y,z \in V$ and scalars $a,b \in F$
+
+1. Conjugate symmetry/symmetry: ${\displaystyle \langle x,y\rangle ={\overline {\langle y,x\rangle }}.}$ When $F$ is $\mathbb{R}$, it's just symmetry, while for $\mathbb{C}$ symmetry only works for
+   the conjugates of the vectors.
+2. Linearity in the first argument $\langle ax + by,z \rangle = a\langle x,z \rangle + b \langle y,z \rangle$. By combining the linear in the first argument property with the conjugate symmetry property you get
+   conjugate-linear in the second argument. For $\mathbb{R}$ it's just linear in the second argument as well.
+3. Positive-definiteness: $x \neq 0 \implies \langle x,x \rangle > 0$
+
+*** Example: Euclidian space
+
+$$
+{\displaystyle \left\langle {\begin{bmatrix}x_{1}\\\vdots \\x_{n}\end{bmatrix}},{\begin{bmatrix}y_{1}\\\vdots \\y_{n}\end{bmatrix}}\right\rangle =x^{\textsf {T}}y=\sum _{i=1}^{n}x_{i}y_{i}=x_{1}y_{1}+\cdots +x_{n}y_{n},}
+$$
+
+*** Example: Hilbert space
+
+For $f,g \in C([a,b])$,
+
+$$
+\langle f,g \rangle = \int_a^b f(t){\overline{g(t)}} dt
+$$
